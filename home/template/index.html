@@ -1,0 +1,840 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>30-Maktab</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="maktab, 30-maktab, oqdaryo, oqdaryomaktab, akobir, akivdesign, asrorov ">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+     <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+     <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="{% static 'css/templatemo-style.css' %}">
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+               <span class="spinner-rotate"></span>
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="{% url 'home' %}" class="navbar-brand">30-maktab</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="#home" class="smoothScroll">Bosh sahifa</a></li>
+                         <li><a href="#about" class="smoothScroll">Maktab haqida</a></li>
+                         <li><a href="#contact" class="smoothScroll">Bog`lanish</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <!-- <li><a href="#"><i class="fa fa-facebook-square"></i></a></li> -->
+                         <li><a href="http://t.me/Akobir_Ibragimov" class="fa fa-telegram"></a></li>
+                                        <li><a href="http://www.instagram.com/akobir_devpro" class="fa fa-instagram"></a></li>
+                         <li class="section-btn"><a href="#" data-toggle="modal" data-target="#modal-form">Murojat</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                     <div class="col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <h1>Assalomu alaykum bizning <br> 30-maktab websites ga xush kelib siz.</h1>
+                              <a href="#about" class="btn section-btn smoothScroll">Maktab Haqida</a>
+                              <span>
+                                   Murojat uchun +998 99 685 54 75
+                                   <small>Akobir Ibragimov</small>
+                              </span>
+                         </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <!-- Vedio uchun Joy -->
+                              
+                         </div>
+                    </div>
+                    
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section id="about" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="about-info">
+                              <div class="section-title">
+                                   <h2 style="text-align: center; font-weight: bold;">Maktab tarixi</h2>
+                                   <span style="text-align: center;" class="line-bar">...</span>
+                              </div>
+                              <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                             <br> <br>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                         <div class="about-image">
+                              <img src="images/" class="img-responsive" alt="">
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+     <section id="blog" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Maktab o`qituvchilari</h2>
+                              <span class="line-bar">...</span>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                         <!-- BLOG THUMB -->
+                         <div class="media blog-thumb">
+                              <div class="media-object media-left" style="padding-top: 15px;">
+                                   <a href="{% url 'blog' %}"><img style="height: 250px; padding-left: 20px;" src="{% static 'images/drector.jpg' %}" class="img-responsive" alt="none image"></a>
+                                   <h3 style="margin-left: 2px; text-align: center;" class="textt"><a href="{% url 'blog' %}">Asrorov A.A</a></h3>
+                                   <p style="text-align: center;">30-maktab direktori</p>
+                              </div>
+                              <div class="media-object media-left ss"  style="padding-top: 15px;">
+                                   <a href="{% url 'blog' %}"><img style="height: 250px; padding-left: 20px;" src="{% static 'images/jamo.jpg' %}"" class="img-responsive" alt="none image"></a>
+                                   <h3 style="margin-left: 2px; text-align: center;"><a href="{% url 'blog' %}">Maktab jamoasi</a></h3>
+
+                                   
+                              </div>
+                              <div class="media-body blog-info">
+                                   
+                                   <h3 style="margin-left: 20px; text-align: center;"><a href="{% url 'blog' %}">Maktab Jamoasi</a></h3>
+
+                                   
+                                   <p>Oqdaryo tumani 30-umuniy urta talim Maktabuda hoziri kungi nisbatini olsak Maktabda 53 ta o'qituvchi  va  590 ta o'quvchi mavjud...</p>
+                                   
+                              </div>
+                         </div>
+                    </div>
+
+                    
+               </div>
+          </div>
+     </section>
+
+       <!-- WORK -->
+     <section id="work" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Ertalabgi saflanishlar</h2>
+                              <span class="line-bar">...</span>
+                         </div>
+                    </div>
+
+                   
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/mana yu.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/mana yu.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3></h3>
+                                        <small></small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/manashu.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/manashu.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3></h3>
+                                        <small></small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/manashu ham.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/manashu ham.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3></h3>
+                                        <small></small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/manaaa.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/manaaa.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3></h3>
+                                        <small></small>
+                                   </div>
+
+
+                              </a>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+        <!-- WORK -->
+     <section id="work" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                   
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/mana shunisi ham.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/mana shunisi ham.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3></h3>
+                                        <small></small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/manashunisi.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/manashunisi.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3></h3>
+                                        <small></small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/mana ooo.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/mana ooo.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3></h3>
+                                        <small></small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/mana .jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/mana .jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3></h3>
+                                        <small></small>
+                                   </div>
+
+
+                              </a>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+
+
+
+
+     <!-- BLOG -->
+     <section id="blog" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>O'quv xonalar</h2>
+                              <span class="line-bar">...</span>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/555.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/555.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Informatika xonasi</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/0.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/o.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Informatika Xonasi</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/6.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/6.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Ona tili xonasi</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/8.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/8.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Faollar xonasi</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+               </div>
+               <br>
+               <div class="row">
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/g.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/g.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Fizika xonasi</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/j.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/j.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Fizika labaratorya xonasi</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/e.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/e.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Sport zal</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/r.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/r.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Sport zal</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+               </div>
+               <br>
+               <div class="row">
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/photo_2021-03-31_15-39-38.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/photo_2021-03-31_15-39-38.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Maktab Ktob xonasi</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/photo_2021-03-31_15-39-10.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/photo_2021-03-31_15-39-10.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Maktab Ktob xonasi</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/7.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/7.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Texnalogiya xonasi</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/photo_2021-03-31_15-39-04.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/photo_2021-03-31_15-39-04.jpg' %}"" class="img-responsive" alt="Work">   
+                                   <div class="work-info">
+                                        <h3>Ktob xona</h3>
+                                        <small></small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <section id="blog" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Tadbirlardan lavhalar</h2>
+                              <span class="line-bar">...</span>
+                         </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-10">
+                         <!-- BLOG THUMB -->
+                         <div class="media blog-thumb">
+                              <div class="media-object media-left">
+                                   <a href="{% url 'blog' %}"><img src="{% static 'images/q.jpg' %}"" style="margin: 20px;" class="img-responsive" alt="none image"></a>
+                                   <a href="{% url 'blog' %}"><img src="{% static 'images/x.jpg' %}"" style="margin: 20px;" class="img-responsive" alt="none image"></a>
+                                   <a href="{% url 'blog' %}"><img src="{% static 'images/w.jpg' %}"" style="margin: 20px;" class="img-responsive" alt="none image"></a>
+                              </div>
+                              <div class="media-body blog-info">
+                                   <h3 style="margin-left: 20px; padding-top:0px; text-align: center;"><a href="{% url 'blog' %}">Maktab Jamoasi</a></h3>
+                                   
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                   cillum dolore eu fugiat nulla pariatur. </p>
+                                   
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-md-5 col-sm-10">
+                         <!-- BLOG THUMB -->
+                         <div class="media blog-thumb">
+                              <div class="media-object media-left">
+                                   <a href="{% url 'blog' %}"><img src="{% static 'images/s.jpg' %}"" style="margin: 20px;" class="img-responsive" alt="none image"></a>
+                                   <a href="{% url 'blog' %}"><img src="{% static 'images/z.jpg' %}"" style="margin: 20px;" class="img-responsive" alt="none image"></a>
+                                   <a href="{% url 'blog' %}"><img src="{% static 'images/f.jpg' %}"" style="margin: 20px;" class="img-responsive" alt="none image"></a>
+                              </div>
+                              <div class="media-body blog-info">
+                                   <h3 style="margin-left: 20px; padding-top:0px; text-align: center;"><a href="{% url 'blog' %}">Maktab Jamoasi</a></h3>
+                                   
+                                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                   cillum dolore eu fugiat nulla pariatur. .</p>
+                                   
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+
+     <!-- WORK -->
+     <section id="work" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Maktab bog'i</h2>
+                              <span class="line-bar">...</span>
+                         </div>
+                    </div>
+
+                   
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/14.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/14.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Gilos bog`i</h3>
+                                        <small>Maktabimizning <br> Gilos bog`i</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/13.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/13.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Maktab archa bog`i</h3>
+                                        <small>Maktabimizning o`quvchilar <br> tomnidan barpo qilingan <br> archa bog`i</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/15.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/15.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Maktab Hovlisi</h3>
+                                        <small>Matabimizning oldi <br> bog`i </small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/17.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/17.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Issiq xona</h3>
+                                        <small>O`quvchilar tomonidan <br> barpo qilingan <br> issiq xona</small>
+                                   </div>
+
+
+                              </a>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+        <!-- WORK -->
+     <section id="work" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                   
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/16.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/16.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Maktab oldi bog'i</h3>
+                                        <small>Maktabimizning <br>oldi bog'i</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/d.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/d.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Maktab daraxt zori</h3>
+                                        <small>Maktabimizning  <br> daraxt zori</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/21.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/21.jpg' %}"" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Maktab orqa tomoni</h3>
+                                        <small>Malumot</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="{% static 'images/22.jpg' %}"" class="image-popup">
+                                   <img src="{% static 'images/22.jpg" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Maktab orqa tomoni</h3>
+                                        <small>Malumot</small>
+                                   </div>
+
+
+                              </a>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- CONTACT -->
+     <section id="contact" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Biz bilan bog'lanish</h2>
+                              <span class="line-bar">...</span>
+                         </div>
+                    </div>
+
+                    <div class="col-md-8 col-sm-8">
+                        
+                         <!-- CONTACT FORM HERE -->
+                         <form id="contact-form" role="form" action="#" method="POST">
+                              {% csrf_token %}
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="text" class="form-control" placeholder="Ismingiz" id="cf-name" name="user" required="">
+                              </div>
+
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="text" class="form-control" placeholder="Familyangiz" id="cf-name" name="fam" required="">
+                              </div>
+
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="tel" class="form-control" placeholder="Telefon nomeringiz" id="cf-number" name="nomer" required="">
+                              </div>
+
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="text" class="form-control" placeholder="Tumaningiz" id="cf-name" name="cf-name" required="">
+                              </div>                              
+
+                              <div class="col-md-12 col-sm-12">
+                                   <textarea class="form-control" rows="6" placeholder="Savolingiz..." id="cf-message" name="xabar" required=""></textarea>
+                              </div>
+
+                              <div class="col-md-4 col-sm-12">
+                                   <input type="submit" class="form-control" name="submit" value="Xabarni junatish">
+                              </div>
+
+                         </form>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="google-map">
+	
+
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d655.1160961269549!2d66.81892882865102!3d39.8475470541316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDUwJzUxLjIiTiA2NsKwNDknMTAuMSJF!5e1!3m2!1sru!2s!4v1617258037317!5m2!1sru!2s" allowfullscreen></iframe>
+
+                              
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+      <!-- FOOTER -->
+     <footer data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="footer-thumb footer-info"> 
+                              <h2 style="text-align: center; font-weight: bold; font-size: 50px">Maktab</h2>
+                              <p style="text-align: center; font-size: 23px">Oqdaryo tumani 30-umumiy o'rta ta'lim maktabi  bizning maktab  ikki qavatli bino, ikki  binoga bo'lingan  birinchi bino  yuqori sinflar uchun,  ikkinchi bino  boshlang'ich ta'lim uchun  berkitilgan.     </p>
+                         </div>
+                    </div>
+
+                   
+                    <div class="col-md-12 col-sm-12">
+                         <div class="footer-bottom">
+                              <div class="col-md-6 col-sm-5">
+                                   <div class="copyright-text"> 
+                                        <p>Copyright &copy; 2021 by AKIV designer</p>
+                                   </div>
+                              </div>
+                              <div class="col-md-6 col-sm-7">
+                                   <div class="phone-contact"> 
+                                        <p>Murojat uchun <span>+998 99 685 54 75</span></p>
+                                   </div>
+                                   <ul class="social-icon">
+                                        
+                                        <li><a href="http://t.me/Akobir_Ibragimov" class="fa fa-telegram"></a></li>
+                                        <li><a href="http://www.instagram.com/akobir_devpro" class="fa fa-instagram"></a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- MODAL -->
+     <section class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+               <div class="modal-content modal-popup">
+
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+
+                    <div class="modal-body">
+                         <div class="container-fluid">
+                              <div class="row">
+
+                                   <div class="col-md-12 col-sm-12">
+                                        <div class="modal-title">
+                                             <h2>Bog`lanish</h2>
+                                        </div>
+
+                                        <!-- NAV TABS -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                             <li class="active"><a href="#sign_up" aria-controls="sign_up" role="tab" data-toggle="tab">Murojat bo`limi</a></li>
+                                        </ul>
+
+                                        <!-- TAB PANES -->
+                                        <div class="tab-content">
+                                             <div role="tabpanel" class="tab-pane fade in active" id="sign_up">
+                                                  <form action="#" method="POST">
+                                                       {% csrf_token %}
+                                                       <input type="text" class="form-control" name="user" placeholder="Ism" required>
+                                                       <input type="telephone" class="form-control" name="fam" placeholder="Familya" required>
+                                                       <input type="text" class="form-control" name="nomer" placeholder="Nomer" required>
+                                                       <textarea class="form-control" rows="6" placeholder="Savolingiz..." id="cf-message" name="xabar" required=""></textarea>
+
+                                                       <input type="submit" class="form-control" name="submit" value="Yuborish">
+                                                  </form>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="{% static 'js/jquery.js' %}""></script>
+     <script src="{% static 'js/bootstrap.min.js' %}""></script>
+     <script src="{% static 'js/jquery.stellar.min.js' %}""></script>
+     <script src="{% static 'js/jquery.magnific-popup.min.js' %}""></script>
+     <script src="{% static 'js/smoothscroll.js' %}""></script>
+     <script src="{% static 'js/custom.js' %}""></script>
+
+</body>
+</html>
